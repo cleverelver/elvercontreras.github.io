@@ -1,0 +1,1403 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title id="dynamic-title">Elver Contreras - Ingeniero de Software | Desarrollador Web Full-Stack</title>
+    <meta id="dynamic-description" name="description" content="Portafolio profesional de Elver Contreras, estudiante de Ingeniería de Software especializado en desarrollo web con React, Python, JavaScript y sistemas ERP Odoo en Lima, Perú.">
+    <meta name="keywords" content="desarrollador web, ingeniero software, React, Python, JavaScript, Odoo ERP, full stack developer, Lima Perú, portfolio">
+    <meta name="author" content="Elver Contreras">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://elvercontreras.dev">
+    
+    <!-- Open Graph Meta Tags (Facebook, LinkedIn) -->
+    <meta property="og:title" content="Elver Contreras - Ingeniero de Software">
+    <meta property="og:description" content="Desarrollador web especializado en React, Python y sistemas ERP. Estudiante de Ingeniería de Software en UTP.">
+    <meta property="og:image" content="https://elvercontreras.dev/og-image.jpg">
+    <meta property="og:url" content="https://elvercontreras.dev">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Elver Contreras Portfolio">
+    <meta property="og:locale" content="es_PE">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Elver Contreras - Ingeniero de Software">
+    <meta name="twitter:description" content="Desarrollador web especializado en React, Python y sistemas ERP">
+    <meta name="twitter:image" content="https://elvercontreras.dev/twitter-card.jpg">
+    <meta name="twitter:creator" content="@tuusuario">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" as="style">
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+    
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="//api.github.com">
+    
+    <!-- Favicon Dinámico -->
+    <link id="dynamic-favicon" rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#22d3ee">
+    <meta name="msapplication-TileColor" content="#1e293b">
+    
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"/>
+</head>
+<body>
+    <!-- Sidebar Desktop -->
+    <aside class="sidebar" id="sidebar" role="complementary" aria-label="Barra lateral de navegación">
+        <!-- Header Section -->
+        <div class="sidebar-header">
+            <div class="profile-section">
+                <div class="profile-image-container">
+                    <img src="image.png" alt="Foto de perfil de Elver Contreras, Ingeniero de Software" class="profile-image" loading="lazy">
+                    <div class="status-indicator" aria-label="Estado de disponibilidad">
+                        <span class="status-dot" role="img" aria-label="Indicador verde - disponible"></span>
+                        <span class="status-text">Disponible</span>
+                    </div>
+                </div>
+                <div class="profile-info">
+                    <h1 class="profile-name">Elver Contreras</h1>
+                    <p class="profile-title">Ingeniero de Software</p>
+                    <p class="profile-location">
+                        <i class="bi bi-geo-alt"></i>
+                        Lima, Perú
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Section -->
+        <nav class="sidebar-nav" role="navigation" aria-label="Navegación principal">
+            <div class="nav-title">Navegación</div>
+            <div class="nav-links" role="menu">
+                <a href="#home" class="nav-link active" role="menuitem" aria-current="page">
+                    <div class="nav-icon" aria-hidden="true">
+                        <i class="bi bi-house"></i>
+                    </div>
+                    <span class="nav-text">Inicio</span>
+                    <div class="nav-indicator" aria-hidden="true"></div>
+                </a>
+                <a href="#about" class="nav-link" role="menuitem">
+                    <div class="nav-icon" aria-hidden="true">
+                        <i class="bi bi-person"></i>
+                    </div>
+                    <span class="nav-text">Sobre mí</span>
+                    <div class="nav-indicator" aria-hidden="true"></div>
+                </a>
+                <a href="#skills" class="nav-link" role="menuitem">
+                    <div class="nav-icon" aria-hidden="true">
+                        <i class="bi bi-lightning-charge"></i>
+                    </div>
+                    <span class="nav-text">Habilidades</span>
+                    <div class="nav-indicator" aria-hidden="true"></div>
+                </a>
+                <a href="#projects" class="nav-link" role="menuitem">
+                    <div class="nav-icon" aria-hidden="true">
+                        <i class="bi bi-folder"></i>
+                    </div>
+                    <span class="nav-text">Proyectos</span>
+                    <div class="nav-indicator" aria-hidden="true"></div>
+                </a>
+                <a href="#contact" class="nav-link" role="menuitem">
+                    <div class="nav-icon" aria-hidden="true">
+                        <i class="bi bi-envelope"></i>
+                    </div>
+                    <span class="nav-text">Contacto</span>
+                    <div class="nav-indicator" aria-hidden="true"></div>
+                </a>
+            </div>
+        </nav>
+
+        <!-- Social Links Section -->
+        <div class="sidebar-social">
+            <div class="social-title">Conecta conmigo</div>
+            <div class="social-links">
+                <a href="mailto:elver.contreras@example.com" class="social-link email" target="_blank" title="Email">
+                    <i class="bi bi-envelope-fill"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/tuusuario" class="social-link linkedin" target="_blank" title="LinkedIn">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="https://github.com/tuusuario" class="social-link github" target="_blank" title="GitHub">
+                    <i class="bi bi-github"></i>
+                </a>
+                <a href="https://twitter.com/tuusuario" class="social-link twitter" target="_blank" title="Twitter">
+                    <i class="bi bi-twitter"></i>
+                </a>
+                <a href="https://wa.me/51918127216" class="social-link whatsapp" target="_blank" title="WhatsApp">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <div class="sidebar-footer">
+            <div class="footer-stats">
+                <div class="stat">
+                    <span class="stat-number" data-target="5">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Proyectos</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="2">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Años</span>
+                </div>
+            </div>
+            <div class="footer-cta">
+                <a href="#contact" class="cta-button">
+                    <i class="bi bi-chat-dots"></i>
+                    ¡Hablemos!
+                </a>
+            </div>
+            <div class="footer-copyright">
+                <p>© 2025 Elver Contreras</p>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main role="main">
+        <!-- Hero -->
+        <section id="home" aria-labelledby="main-title">
+            <div class="hero-container">
+                <!-- Terminal Background Effect -->
+                <div class="code-background">
+                    <div class="code-line">const developer = new SoftwareEngineer();</div>
+                    <div class="code-line">developer.skills = ['React', 'Python', 'JavaScript'];</div>
+                    <div class="code-line">developer.passion = 'Building amazing solutions';</div>
+                    <div class="code-line">// Ready to create something great...</div>
+                </div>
+                
+                <!-- Floating Elements -->
+                <div class="floating-elements">
+                    <div class="floating-item" data-tech="React">⚛️</div>
+                    <div class="floating-item" data-tech="Python">🐍</div>
+                    <div class="floating-item" data-tech="JavaScript">💻</div>
+                    <div class="floating-item" data-tech="Git">📚</div>
+                    <div class="floating-item" data-tech="Database">🗄️</div>
+                </div>
+                
+                <div class="hero-content">
+                    <!-- Status Professional Badge -->
+                    <div class="status-badge">
+                        <div class="status-indicator-dot"></div>
+                        <span class="status-text">Disponible para proyectos</span>
+                    </div>
+                    <div class="developer-intro">
+                        <h1 class="main-title" id="main-title">
+                            <span class="greeting">Hola, soy</span>
+                            <span class="name-highlight">Elver Contreras</span>
+                        </h1>
+                        <div class="role-container">
+                            <span class="role-prefix">></span>
+                            <span id="changing-role" class="changing-role">Software Engineer Student</span>
+                            <span class="cursor">|</span>
+                        </div>
+                        <p class="mission-statement">
+                            Transformo <strong>ideas innovadoras</strong> en <strong>soluciones digitales</strong> robustas y escalables.
+                            <br>Especializado en <em>desarrollo full-stack</em> y <em>sistemas ERP</em>.
+                        </p>
+                    </div>
+                    
+                    <!-- Developer Metrics -->
+                    <div class="dev-metrics">
+                        <div class="metric-item">
+                            <div class="metric-icon">💡</div>
+                            <div class="metric-content">
+                                <span class="metric-number" data-target="500">0</span><span class="metric-plus">+</span>
+                                <span class="metric-label">Commits</span>
+                            </div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-icon">🚀</div>
+                            <div class="metric-content">
+                                <span class="metric-number" data-target="8">0</span>
+                                <span class="metric-label">Proyectos</span>
+                            </div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-icon">⚡</div>
+                            <div class="metric-content">
+                                <span class="metric-number" data-target="15">0</span><span class="metric-plus">+</span>
+                                <span class="metric-label">Tecnologías</span>
+                            </div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-icon">🎯</div>
+                            <div class="metric-content">
+                                <span class="metric-number" data-target="2">0</span>
+                                <span class="metric-label">Años Coding</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Botones de acción -->
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn-primary">
+                            <i class="bi bi-folder"></i>
+                            Ver Proyectos
+                        </a>
+                        <a href="#contact" class="btn-secondary">
+                            <i class="bi bi-envelope"></i>
+                            Contáctame
+                        </a>
+                        <a href="#" class="btn-outline" id="download-cv">
+                            <i class="bi bi-download"></i>
+                            Descargar CV
+                        </a>
+                    </div>
+                    
+                    <!-- Tecnologías favoritas -->
+                    <div class="tech-stack">
+                        <span class="tech-label">Tecnologías que domino:</span>
+                        <div class="tech-icons">
+                            <div class="tech-item" title="React">
+                                <span>⚛️</span>
+                            </div>
+                            <div class="tech-item" title="Python">
+                                <span>🐍</span>
+                            </div>
+                            <div class="tech-item" title="JavaScript">
+                                <span>💻</span>
+                            </div>
+                            <div class="tech-item" title="Odoo">
+                                <span>🏢</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" aria-labelledby="about-heading">
+            <div class="about-container">
+                <div class="about-header">
+                    <h2 id="about-heading">Sobre mí</h2>
+                    <p class="about-subtitle">Conoce mi historia, objetivos y lo que me apasiona</p>
+                </div>
+
+                <div class="about-content">
+                    <!-- Introducción personal -->
+                    <div class="intro-section">
+                        <div class="intro-text">
+                            <h3>¡Hola! Soy Elver Contreras 👋</h3>
+                            <p>
+                                Soy un <strong>estudiante de Ingeniería de Software</strong> en la Universidad Tecnológica del Perú (UTP), 
+                                apasionado por crear soluciones tecnológicas que generen impacto positivo. Mi enfoque principal está en el 
+                                <strong>desarrollo web moderno</strong> y la implementación de sistemas ERP con <strong>Odoo</strong>.
+                            </p>
+                            <p>
+                                Me motiva resolver problemas complejos mediante código limpio y eficiente, siempre buscando aprender 
+                                las últimas tecnologías y mejores prácticas en el desarrollo de software.
+                            </p>
+                        </div>
+                        <div class="intro-stats">
+                            <div class="stat-card">
+                                <div class="stat-icon">🎓</div>
+                                <div class="stat-info">
+                                    <span class="stat-title">Educación</span>
+                                    <span class="stat-value">Ing. Software</span>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon">📍</div>
+                                <div class="stat-info">
+                                    <span class="stat-title">Ubicación</span>
+                                    <span class="stat-value">Lima, Perú</span>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon">💼</div>
+                                <div class="stat-info">
+                                    <span class="stat-title">Enfoque</span>
+                                    <span class="stat-value">Full Stack</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline educativo/profesional -->
+                    <div class="timeline-section">
+                        <h3>Mi Trayectoria</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-year">2023 - Presente</div>
+                                    <h4>Estudiante de Ingeniería de Software</h4>
+                                    <p>Universidad Tecnológica del Perú (UTP)</p>
+                                    <span class="timeline-tag">Educación</span>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-year">2024</div>
+                                    <h4>Especialización en Desarrollo Web</h4>
+                                    <p>Enfoque en React, JavaScript moderno y Python</p>
+                                    <span class="timeline-tag">Desarrollo</span>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-year">2024</div>
+                                    <h4>Aprendizaje de Odoo ERP</h4>
+                                    <p>Desarrollo de módulos y personalización de sistemas</p>
+                                    <span class="timeline-tag">ERP</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Objetivos y motivaciones -->
+                    <div class="goals-section">
+                        <h3>Mis Objetivos</h3>
+                        <div class="goals-grid">
+                            <div class="goal-card">
+                                <div class="goal-icon">🚀</div>
+                                <h4>Corto Plazo</h4>
+                                <ul>
+                                    <li>Dominar React y el ecosistema JavaScript</li>
+                                    <li>Construir proyectos reales con impacto</li>
+                                    <li>Conseguir mi primera experiencia laboral</li>
+                                </ul>
+                            </div>
+                            <div class="goal-card">
+                                <div class="goal-icon">🎯</div>
+                                <h4>Mediano Plazo</h4>
+                                <ul>
+                                    <li>Graduarme como Ingeniero de Software</li>
+                                    <li>Especializarme en arquitectura de software</li>
+                                    <li>Contribuir a proyectos open source</li>
+                                </ul>
+                            </div>
+                            <div class="goal-card">
+                                <div class="goal-icon">💡</div>
+                                <h4>Largo Plazo</h4>
+                                <ul>
+                                    <li>Liderar equipos de desarrollo</li>
+                                    <li>Crear mi propia startup tecnológica</li>
+                                    <li>Enseñar y mentorear nuevos desarrolladores</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Intereses y valores -->
+                    <div class="values-section">
+                        <h3>Lo que me Motiva</h3>
+                        <div class="values-grid">
+                            <div class="value-item">
+                                <i class="bi bi-lightbulb"></i>
+                                <h4>Innovación</h4>
+                                <p>Busco constantemente nuevas formas de resolver problemas y mejorar procesos.</p>
+                            </div>
+                            <div class="value-item">
+                                <i class="bi bi-people"></i>
+                                <h4>Colaboración</h4>
+                                <p>Creo en el poder del trabajo en equipo para crear soluciones extraordinarias.</p>
+                            </div>
+                            <div class="value-item">
+                                <i class="bi bi-graph-up"></i>
+                                <h4>Crecimiento</h4>
+                                <p>Me apasiona el aprendizaje continuo y la mejora personal y profesional.</p>
+                            </div>
+                            <div class="value-item">
+                                <i class="bi bi-shield-check"></i>
+                                <h4>Calidad</h4>
+                                <p>Me comprometo a entregar código limpio, eficiente y bien documentado.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Call to action -->
+                    <div class="about-cta">
+                        <h3>¿Trabajamos juntos?</h3>
+                        <p>Si tienes un proyecto interesante o quieres colaborar, ¡me encantaría escucharte!</p>
+                        <div class="cta-buttons">
+                            <a href="#contact" class="btn-primary">
+                                <i class="bi bi-chat-dots"></i>
+                                Conversemos
+                            </a>
+                            <a href="#projects" class="btn-outline">
+                                <i class="bi bi-eye"></i>
+                                Ver mis proyectos
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" aria-labelledby="skills-heading">
+            <div class="skills-container">
+                <div class="skills-header">
+                    <h2 id="skills-heading">Mis Habilidades</h2>
+                    <p class="skills-subtitle">Tecnologías y herramientas que domino para crear soluciones innovadoras</p>
+                </div>
+
+                <!-- Filtros por categoría -->
+                <div class="skills-filters">
+                    <button class="filter-btn active" data-category="all">
+                        <i class="bi bi-grid"></i>
+                        Todas
+                    </button>
+                    <button class="filter-btn" data-category="frontend">
+                        <i class="bi bi-palette"></i>
+                        Frontend
+                    </button>
+                    <button class="filter-btn" data-category="backend">
+                        <i class="bi bi-server"></i>
+                        Backend
+                    </button>
+                    <button class="filter-btn" data-category="tools">
+                        <i class="bi bi-tools"></i>
+                        Herramientas
+                    </button>
+                    <button class="filter-btn" data-category="database">
+                        <i class="bi bi-database"></i>
+                        Bases de datos
+                    </button>
+                </div>
+
+                <div class="skills-content">
+                    <!-- Frontend Skills -->
+                    <div class="skills-category" data-category="frontend">
+                        <h3>
+                            <i class="bi bi-palette"></i>
+                            Frontend Development
+                        </h3>
+                        <div class="skills-grid">
+                            <div class="skill-item" data-category="frontend">
+                                <div class="skill-header">
+                                    <div class="skill-info">
+                                        <div class="skill-icon">⚛️</div>
+                                        <div class="skill-details">
+                                            <h4>React</h4>
+                                            <span class="skill-level">Intermedio</span>
+                                        </div>
+                                    </div>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-width="75"></div>
+                                </div>
+                                <p class="skill-description">Hooks, Components, State Management, React Router</p>
+                            </div>
+
+                            <div class="skill-item" data-category="frontend">
+                                <div class="skill-header">
+                                    <div class="skill-info">
+                                        <div class="skill-icon">💻</div>
+                                        <div class="skill-details">
+                                            <h4>JavaScript</h4>
+                                            <span class="skill-level">Avanzado</span>
+                                        </div>
+                                    </div>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-width="85"></div>
+                                </div>
+                                <p class="skill-description">ES6+, Async/Await, DOM, APIs, Módulos</p>
+                            </div>
+
+                            <div class="skill-item" data-category="frontend">
+                                <div class="skill-header">
+                                    <div class="skill-info">
+                                        <div class="skill-icon">🎨</div>
+                                        <div class="skill-details">
+                                            <h4>CSS3 & HTML5</h4>
+                                            <span class="skill-level">Avanzado</span>
+                                        </div>
+                                    </div>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-width="90"></div>
+                                </div>
+                                <p class="skill-description">Flexbox, Grid, Animations, Responsive Design</p>
+                            </div>
+
+                            <div class="skill-item" data-category="frontend">
+                                <div class="skill-header">
+                                    <div class="skill-info">
+                                        <div class="skill-icon">🌊</div>
+                                        <div class="skill-details">
+                                            <h4>Tailwind CSS</h4>
+                                            <span class="skill-level">Intermedio</span>
+                                        </div>
+                                    </div>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-width="70"></div>
+                                </div>
+                                <p class="skill-description">Utility classes, Custom components, Responsive</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend Skills -->
+                    <div class="skills-category" data-category="backend">
+                        <h3>
+                            <i class="bi bi-server"></i>
+                            Backend Development
+                        </h3>
+                        <div class="skills-grid">
+                            <div class="skill-item" data-category="backend">
+                                <div class="skill-header">
+                                    <div class="skill-info">
+                                        <div class="skill-icon">🐍</div>
+                                        <div class="skill-details">
+                                            <h4>Python</h4>
+                                            <span class="skill-level">Avanzado</span>
+                                        </div>
+                                    </div>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-width="80"></div>
+                                </div>
+                                <p class="skill-description">OOP, Data Structures, APIs, Web Scraping</p>
+                            </div>
+
+                            <div class="skill-item" data-category="backend">
+                                <div class="skill-header">
+                                    <div class="skill-info">
+                                        <div class="skill-icon">🏢</div>
+                                        <div class="skill-details">
+                                            <h4>Odoo ERP</h4>
+                                            <span class="skill-level">Intermedio</span>
+                                        </div>
+                                    </div>
+                                    <span class="skill-percentage">65%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-width="65"></div>
+                                </div>
+                                <p class="skill-description">Módulos customizados, Views, Models, Controllers</p>
+                            </div>
+
+                            <div class="skill-item" data-category="backend">
+                                <div class="skill-header">
+                                    <div class="skill-info">
+                                        <div class="skill-icon">📡</div>
+                                        <div class="skill-details">
+                                            <h4>REST APIs</h4>
+                                            <span class="skill-level">Intermedio</span>
+                                        </div>
+                                    </div>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-width="70"></div>
+                                </div>
+                                <p class="skill-description">CRUD operations, Authentication, JSON</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Technologies -->
+                    <div class="skills-category" data-category="tools">
+                        <h3>
+                            <i class="bi bi-tools"></i>
+                            Herramientas & Tecnologías
+                        </h3>
+                        <div class="skills-grid">
+                            <div class="skill-item" data-category="tools">
+                                <div class="skill-header">
+                                    <div class="skill-info">
+                                        <div class="skill-icon">📚</div>
+                                        <div class="skill-details">
+                                            <h4>Git & GitHub</h4>
+                                            <span class="skill-level">Avanzado</span>
+                                        </div>
+                                    </div>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-width="85"></div>
+                                </div>
+                                <p class="skill-description">Version control, Branching, Collaboration</p>
+                            </div>
+
+                            <div class="skill-item" data-category="tools">
+                                <div class="skill-header">
+                                    <div class="skill-info">
+                                        <div class="skill-icon">💻</div>
+                                        <div class="skill-details">
+                                            <h4>VS Code</h4>
+                                            <span class="skill-level">Experto</span>
+                                        </div>
+                                    </div>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-width="95"></div>
+                                </div>
+                                <p class="skill-description">Extensions, Debugging, Productivity</p>
+                            </div>
+
+                            <div class="skill-item" data-category="tools">
+                                <div class="skill-header">
+                                    <div class="skill-info">
+                                        <div class="skill-icon">🐧</div>
+                                        <div class="skill-details">
+                                            <h4>Linux/Terminal</h4>
+                                            <span class="skill-level">Intermedio</span>
+                                        </div>
+                                    </div>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-width="70"></div>
+                                </div>
+                                <p class="skill-description">Command line, Shell scripting, System admin</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Database Skills -->
+                    <div class="skills-category" data-category="database">
+                        <h3>
+                            <i class="bi bi-database"></i>
+                            Bases de Datos
+                        </h3>
+                        <div class="skills-grid">
+                            <div class="skill-item" data-category="database">
+                                <div class="skill-header">
+                                    <div class="skill-info">
+                                        <div class="skill-icon">🐘</div>
+                                        <div class="skill-details">
+                                            <h4>PostgreSQL</h4>
+                                            <span class="skill-level">Intermedio</span>
+                                        </div>
+                                    </div>
+                                    <span class="skill-percentage">65%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-width="65"></div>
+                                </div>
+                                <p class="skill-description">Queries, Relations, Optimization</p>
+                            </div>
+
+                            <div class="skill-item" data-category="database">
+                                <div class="skill-header">
+                                    <div class="skill-info">
+                                        <div class="skill-icon">💾</div>
+                                        <div class="skill-details">
+                                            <h4>SQL</h4>
+                                            <span class="skill-level">Intermedio</span>
+                                        </div>
+                                    </div>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-width="75"></div>
+                                </div>
+                                <p class="skill-description">SELECT, JOIN, Subqueries, Functions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificaciones y logros -->
+                <div class="skills-achievements">
+                    <h3>Certificaciones & Logros</h3>
+                    <div class="achievements-grid">
+                        <div class="achievement-item">
+                            <div class="achievement-icon">🏆</div>
+                            <div class="achievement-content">
+                                <h4>Estudiante destacado</h4>
+                                <p>Promedio destacado en cursos de programación</p>
+                                <span class="achievement-year">2024</span>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <div class="achievement-icon">📜</div>
+                            <div class="achievement-content">
+                                <h4>Certificación en desarrollo web</h4>
+                                <p>Curso completo de desarrollo web moderno</p>
+                                <span class="achievement-year">2024</span>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <div class="achievement-icon">🚀</div>
+                            <div class="achievement-content">
+                                <h4>Proyectos personales</h4>
+                                <p>Múltiples proyectos web desarrollados</p>
+                                <span class="achievement-year">2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Call to action -->
+                <div class="skills-cta">
+                    <h3>¿Buscas estas habilidades?</h3>
+                    <p>Estoy siempre aprendiendo y mejorando. ¡Hablemos sobre cómo puedo contribuir a tu proyecto!</p>
+                    <a href="#contact" class="btn-primary">
+                        <i class="bi bi-chat-dots"></i>
+                        Conversemos
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" aria-labelledby="projects-heading">
+            <div class="projects-container">
+                <div class="projects-header">
+                    <h2 id="projects-heading">Mis Proyectos</h2>
+                    <p class="projects-subtitle">Una selección de proyectos que demuestran mis habilidades y pasión por la tecnología</p>
+                </div>
+
+                <!-- Filtros por tecnología -->
+                <div class="projects-filters">
+                    <button class="project-filter-btn active" data-tech="all">
+                        <i class="bi bi-grid"></i>
+                        Todos
+                    </button>
+                    <button class="project-filter-btn" data-tech="react">
+                        <span class="tech-emoji">⚛️</span>
+                        React
+                    </button>
+                    <button class="project-filter-btn" data-tech="python">
+                        <span class="tech-emoji">🐍</span>
+                        Python
+                    </button>
+                    <button class="project-filter-btn" data-tech="javascript">
+                        <span class="tech-emoji">💻</span>
+                        JavaScript
+                    </button>
+                    <button class="project-filter-btn" data-tech="web">
+                        <span class="tech-emoji">🌐</span>
+                        Web
+                    </button>
+                </div>
+
+                <!-- Grid de proyectos -->
+                <div class="projects-grid">
+                    <!-- Proyecto 1: Portafolio Personal -->
+                    <article class="project-card" data-tech="react javascript web">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="bi bi-person-badge"></i>
+                                <span>Portafolio Personal</span>
+                            </div>
+                            <div class="project-overlay">
+                                <button class="btn-view-details" data-project="portfolio">
+                                    <i class="bi bi-eye"></i>
+                                    Ver Detalles
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>Portafolio Personal</h3>
+                                <span class="project-status featured">Destacado</span>
+                            </div>
+                            <p class="project-description">
+                                Portafolio web interactivo desarrollado con tecnologías modernas. 
+                                Incluye animaciones, responsive design y efectos visuales avanzados.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Responsive</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link github" target="_blank">
+                                    <i class="bi bi-github"></i>
+                                    Código
+                                </a>
+                                <a href="#" class="project-link demo" target="_blank">
+                                    <i class="bi bi-eye"></i>
+                                    Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 2: Sistema de Gestión -->
+                    <article class="project-card" data-tech="python web">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="bi bi-gear-wide"></i>
+                                <span>Sistema de Gestión</span>
+                            </div>
+                            <div class="project-overlay">
+                                <button class="btn-view-details" data-project="management">
+                                    <i class="bi bi-eye"></i>
+                                    Ver Detalles
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>Sistema de Gestión Web</h3>
+                                <span class="project-status">En desarrollo</span>
+                            </div>
+                            <p class="project-description">
+                                Sistema web para gestión de inventario y ventas desarrollado en Python. 
+                                Incluye autenticación, dashboard y reportes interactivos.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Flask</span>
+                                <span class="tech-tag">SQLite</span>
+                                <span class="tech-tag">Bootstrap</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link github" target="_blank">
+                                    <i class="bi bi-github"></i>
+                                    Código
+                                </a>
+                                <a href="#" class="project-link demo disabled">
+                                    <i class="bi bi-tools"></i>
+                                    En desarrollo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 3: Aplicación React -->
+                    <article class="project-card" data-tech="react javascript">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="bi bi-calendar-check"></i>
+                                <span>Task Manager</span>
+                            </div>
+                            <div class="project-overlay">
+                                <button class="btn-view-details" data-project="taskmanager">
+                                    <i class="bi bi-eye"></i>
+                                    Ver Detalles
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>Task Manager React</h3>
+                                <span class="project-status">Completado</span>
+                            </div>
+                            <p class="project-description">
+                                Aplicación de gestión de tareas construida con React. 
+                                Funcionalidades de CRUD, filtros y almacenamiento local.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Hooks</span>
+                                <span class="tech-tag">LocalStorage</span>
+                                <span class="tech-tag">CSS Modules</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link github" target="_blank">
+                                    <i class="bi bi-github"></i>
+                                    Código
+                                </a>
+                                <a href="#" class="project-link demo" target="_blank">
+                                    <i class="bi bi-eye"></i>
+                                    Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 4: Script Python -->
+                    <article class="project-card" data-tech="python">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="bi bi-robot"></i>
+                                <span>Web Scraper</span>
+                            </div>
+                            <div class="project-overlay">
+                                <button class="btn-view-details" data-project="scraper">
+                                    <i class="bi bi-eye"></i>
+                                    Ver Detalles
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>Web Scraper Automático</h3>
+                                <span class="project-status">Completado</span>
+                            </div>
+                            <p class="project-description">
+                                Script automatizado para extracción de datos web. 
+                                Incluye manejo de errores y exportación a CSV/Excel.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">BeautifulSoup</span>
+                                <span class="tech-tag">Requests</span>
+                                <span class="tech-tag">Pandas</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link github" target="_blank">
+                                    <i class="bi bi-github"></i>
+                                    Código
+                                </a>
+                                <a href="#" class="project-link demo disabled">
+                                    <i class="bi bi-terminal"></i>
+                                    Script
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 5: Calculadora Web -->
+                    <article class="project-card" data-tech="javascript web">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="bi bi-calculator"></i>
+                                <span>Calculadora</span>
+                            </div>
+                            <div class="project-overlay">
+                                <button class="btn-view-details" data-project="calculator">
+                                    <i class="bi bi-eye"></i>
+                                    Ver Detalles
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>Calculadora Científica</h3>
+                                <span class="project-status">Completado</span>
+                            </div>
+                            <p class="project-description">
+                                Calculadora web con funciones científicas avanzadas. 
+                                Interfaz intuitiva y soporte para operaciones complejas.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">Math.js</span>
+                                <span class="tech-tag">PWA</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link github" target="_blank">
+                                    <i class="bi bi-github"></i>
+                                    Código
+                                </a>
+                                <a href="#" class="project-link demo" target="_blank">
+                                    <i class="bi bi-eye"></i>
+                                    Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 6: Próximamente -->
+                    <article class="project-card coming-soon" data-tech="web">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="bi bi-plus-circle"></i>
+                                <span>Próximamente</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>Nuevo Proyecto</h3>
+                                <span class="project-status upcoming">Próximamente</span>
+                            </div>
+                            <p class="project-description">
+                                Estoy trabajando en nuevos proyectos emocionantes. 
+                                ¡Mantente atento para ver las últimas actualizaciones!
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">Socket.io</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#contact" class="project-link contact">
+                                    <i class="bi bi-chat-dots"></i>
+                                    Conversemos
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Estadísticas de proyectos -->
+                <div class="projects-stats">
+                    <div class="stat-item">
+                        <div class="stat-icon">📊</div>
+                        <div class="stat-content">
+                            <span class="stat-number">5</span>
+                            <span class="stat-label">Proyectos Completados</span>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">🔧</div>
+                        <div class="stat-content">
+                            <span class="stat-number">8</span>
+                            <span class="stat-label">Tecnologías Utilizadas</span>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">⏰</div>
+                        <div class="stat-content">
+                            <span class="stat-number">200+</span>
+                            <span class="stat-label">Horas de Código</span>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">🚀</div>
+                        <div class="stat-content">
+                            <span class="stat-number">3</span>
+                            <span class="stat-label">En Producción</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Call to action -->
+                <div class="projects-cta">
+                    <h3>¿Te interesan mis proyectos?</h3>
+                    <p>Siempre estoy trabajando en algo nuevo y emocionante. ¡Colaboremos en tu próxima idea!</p>
+                    <div class="cta-buttons">
+                        <a href="#contact" class="btn-primary">
+                            <i class="bi bi-chat-dots"></i>
+                            Hablemos
+                        </a>
+                        <a href="https://github.com/tuusuario" class="btn-outline" target="_blank">
+                            <i class="bi bi-github"></i>
+                            Ver GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal para detalles de proyectos -->
+            <div id="project-modal" class="modal">
+                <div class="modal-content">
+                    <span class="modal-close">&times;</span>
+                    <div class="modal-body">
+                        <div class="modal-image">
+                            <div class="modal-placeholder">
+                                <i class="bi bi-image"></i>
+                                <span>Captura del proyecto</span>
+                            </div>
+                        </div>
+                        <div class="modal-info">
+                            <h3 id="modal-title">Título del Proyecto</h3>
+                            <p id="modal-description">Descripción detallada del proyecto...</p>
+                            <div class="modal-features">
+                                <h4>Características principales:</h4>
+                                <ul id="modal-features-list">
+                                    <li>Característica 1</li>
+                                    <li>Característica 2</li>
+                                    <li>Característica 3</li>
+                                </ul>
+                            </div>
+                            <div class="modal-tech">
+                                <h4>Tecnologías utilizadas:</h4>
+                                <div id="modal-tech-tags"></div>
+                            </div>
+                            <div class="modal-links">
+                                <a href="#" id="modal-github" class="btn-primary" target="_blank">
+                                    <i class="bi bi-github"></i>
+                                    Ver Código
+                                </a>
+                                <a href="#" id="modal-demo" class="btn-outline" target="_blank">
+                                    <i class="bi bi-eye"></i>
+                                    Ver Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" aria-labelledby="contact-heading">
+            <div class="contact-container">
+                <div class="contact-header">
+                    <h2 id="contact-heading">Contáctame</h2>
+                    <p class="contact-subtitle">¿Tienes un proyecto en mente? ¡Hablemos y hagámoslo realidad juntos!</p>
+                </div>
+
+                <div class="contact-content">
+                    <!-- Información de contacto -->
+                    <div class="contact-info">
+                        <div class="contact-intro">
+                            <h3>¡Conectemos! 🚀</h3>
+                            <p>
+                                Estoy siempre abierto a nuevas oportunidades, colaboraciones y conversaciones interesantes. 
+                                Si tienes un proyecto, una idea o simplemente quieres charlar sobre tecnología, no dudes en contactarme.
+                            </p>
+                        </div>
+
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="bi bi-envelope-fill"></i>
+                                </div>
+                                <div class="method-info">
+                                    <h4>Email</h4>
+                                    <p>elver.contreras@example.com</p>
+                                    <small>Respondo en menos de 24 horas</small>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="bi bi-whatsapp"></i>
+                                </div>
+                                <div class="method-info">
+                                    <h4>WhatsApp</h4>
+                                    <p>+51 918 127 216</p>
+                                    <small>Disponible de 9:00 AM - 8:00 PM</small>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="bi bi-linkedin"></i>
+                                </div>
+                                <div class="method-info">
+                                    <h4>LinkedIn</h4>
+                                    <p>linkedin.com/in/elver-contreras</p>
+                                    <small>Red profesional activa</small>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                </div>
+                                <div class="method-info">
+                                    <h4>Ubicación</h4>
+                                    <p>Lima, Perú</p>
+                                    <small>Disponible para proyectos remotos</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Disponibilidad -->
+                        <div class="availability-section">
+                            <h4>
+                                <span class="status-dot"></span>
+                                Estado Actual
+                            </h4>
+                            <div class="availability-info">
+                                <div class="availability-item">
+                                    <strong>📚 Estudiando:</strong> Ingeniería de Software en UTP
+                                </div>
+                                <div class="availability-item">
+                                    <strong>💼 Disponible para:</strong> Proyectos freelance, prácticas, colaboraciones
+                                </div>
+                                <div class="availability-item">
+                                    <strong>🎯 Intereses:</strong> Desarrollo web, Python, React, Odoo ERP
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Redes sociales -->
+                        <div class="social-links">
+                            <h4>Sígueme en:</h4>
+                            <div class="social-buttons">
+                                <a href="https://github.com/tuusuario" class="social-btn github" target="_blank">
+                                    <i class="bi bi-github"></i>
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="https://www.linkedin.com/in/tuusuario" class="social-btn linkedin" target="_blank">
+                                    <i class="bi bi-linkedin"></i>
+                                    <span>LinkedIn</span>
+                                </a>
+                                <a href="https://twitter.com/tuusuario" class="social-btn twitter" target="_blank">
+                                    <i class="bi bi-twitter"></i>
+                                    <span>Twitter</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formulario de contacto -->
+                    <div class="contact-form-section">
+                        <div class="form-header">
+                            <h3>Envíame un mensaje</h3>
+                            <p>Completa el formulario y te responderé lo antes posible</p>
+                        </div>
+
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="contact-name">
+                                        <i class="bi bi-person"></i>
+                                        Nombre *
+                                    </label>
+                                    <input 
+                                        type="text" 
+                                        id="contact-name"
+                                        name="name"
+                                        placeholder="Tu nombre completo"
+                                        required
+                                    >
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact-email">
+                                        <i class="bi bi-envelope"></i>
+                                        Email *
+                                    </label>
+                                    <input 
+                                        type="email" 
+                                        id="contact-email"
+                                        name="email"
+                                        placeholder="tu@email.com"
+                                        required
+                                    >
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-company">
+                                    <i class="bi bi-building"></i>
+                                    Empresa / Organización
+                                </label>
+                                <input 
+                                    type="text" 
+                                    id="contact-company"
+                                    name="company"
+                                    placeholder="Nombre de tu empresa (opcional)"
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-subject">
+                                    <i class="bi bi-tag"></i>
+                                    Asunto *
+                                </label>
+                                <select id="contact-subject" name="subject" required>
+                                    <option value="">Selecciona un tema</option>
+                                    <option value="proyecto">Propuesta de proyecto</option>
+                                    <option value="colaboracion">Colaboración</option>
+                                    <option value="freelance">Trabajo freelance</option>
+                                    <option value="practicas">Oportunidad de prácticas</option>
+                                    <option value="consulta">Consulta técnica</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-budget">
+                                    <i class="bi bi-currency-dollar"></i>
+                                    Presupuesto estimado
+                                </label>
+                                <select id="contact-budget" name="budget">
+                                    <option value="">Selecciona un rango (opcional)</option>
+                                    <option value="500-1000">$500 - $1,000</option>
+                                    <option value="1000-2500">$1,000 - $2,500</option>
+                                    <option value="2500-5000">$2,500 - $5,000</option>
+                                    <option value="5000+">$5,000+</option>
+                                    <option value="discutir">A discutir</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-message">
+                                    <i class="bi bi-chat-text"></i>
+                                    Mensaje *
+                                </label>
+                                <textarea 
+                                    id="contact-message"
+                                    name="message"
+                                    placeholder="Cuéntame sobre tu proyecto, idea o consulta. Entre más detalles, mejor podré ayudarte..."
+                                    rows="6"
+                                    required
+                                ></textarea>
+                                <small class="char-count">
+                                    <span id="char-count">0</span>/500 caracteres
+                                </small>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="submit" class="btn-submit">
+                                    <i class="bi bi-send"></i>
+                                    <span class="btn-text">Enviar Mensaje</span>
+                                    <div class="btn-loading">
+                                        <i class="bi bi-arrow-repeat"></i>
+                                        Enviando...
+                                    </div>
+                                </button>
+                                <button type="reset" class="btn-reset">
+                                    <i class="bi bi-arrow-counterclockwise"></i>
+                                    Limpiar
+                                </button>
+                            </div>
+
+                            <!-- Success/Error Messages -->
+                            <div class="form-message success" id="success-message">
+                                <i class="bi bi-check-circle"></i>
+                                <span>¡Mensaje enviado exitosamente! Te responderé pronto.</span>
+                            </div>
+                            <div class="form-message error" id="error-message">
+                                <i class="bi bi-exclamation-triangle"></i>
+                                <span>Hubo un error al enviar el mensaje. Inténtalo de nuevo.</span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- FAQ Section -->
+                <div class="contact-faq">
+                    <h3>Preguntas Frecuentes</h3>
+                    <div class="faq-grid">
+                        <div class="faq-item">
+                            <h4>⏱️ ¿Cuál es tu tiempo de respuesta?</h4>
+                            <p>Generalmente respondo en menos de 24 horas. Para proyectos urgentes, puedes contactarme por WhatsApp.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4>💰 ¿Trabajas con presupuestos pequeños?</h4>
+                            <p>Sí, estoy abierto a proyectos de diferentes escalas. Podemos discutir opciones que se adapten a tu presupuesto.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4>🌍 ¿Trabajas remotamente?</h4>
+                            <p>Absolutamente. Trabajo de forma remota y tengo experiencia colaborando con equipos distribuidos.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4>🛠️ ¿Qué tipo de proyectos prefieres?</h4>
+                            <p>Me encantan los proyectos de desarrollo web, aplicaciones React, sistemas Python y customización de Odoo.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Call to action final -->
+                <div class="contact-final-cta">
+                    <div class="cta-content">
+                        <h3>¿Listo para comenzar?</h3>
+                        <p>No importa si tienes una idea clara o solo una concept inicial. ¡Hablemos y veamos cómo puedo ayudarte!</p>
+                        <div class="cta-buttons">
+                            <a href="https://wa.me/51918127216" class="btn-primary" target="_blank">
+                                <i class="bi bi-whatsapp"></i>
+                                Escribir por WhatsApp
+                            </a>
+                            <a href="mailto:elver.contreras@example.com" class="btn-outline">
+                                <i class="bi bi-envelope"></i>
+                                Enviar Email
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
